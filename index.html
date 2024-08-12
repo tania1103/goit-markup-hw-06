@@ -29,47 +29,110 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- header -->
+    <!--Header top line-->
     <header class="header">
-      <div class="container">
-        <nav class="header-navigation">
-          <a href="./index.html" class="logo-header"
-            >Web<span class="logo-hader-part">Studio</span></a
-          >
-          <ul class="top-menu">
-            <li class="top-menu-item">
-              <a href="./index.html" class="link active">Studio</a>
+      <div class="header-container container">
+        <!--Logo-->
+        <a href="./index.html" class="logo-header"
+          >Web<span class="logo-hader-part">Studio</span></a
+        >
+        <!--menu functions-->
+        <div class="menu" data-menu>
+          <button class="menu-close-button" type="button" data-close-menu>
+            <svg class="menu-close-button-icon" width="24" height="24">
+              <use
+                class="icon-close"
+                href="./images/icons.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+          <!--Navigation line-->
+          <nav class="header-navigation">
+            <ul class="top-menu">
+              <li class="top-menu-item">
+                <a href="./index.html" class="link current">Studio</a>
+              </li>
+              <li class="top-menu-item">
+                <a href="" class="link">Portfolio</a>
+              </li>
+              <li class="top-menu-item">
+                <a href="" class="link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!--Info contacts-->
+          <address class="contacts-us">
+            <ul class="contacts-us-menu">
+              <li class="top-menu-item">
+                <a href="mailto:info@devstudio.com" class="address-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="top-menu-item">
+                <a href="tel:+110001111111" class="address-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <!-- Social Media Link -->
+          <ul class="social-icons">
+            <li class="social-icon">
+              <a href="" class="link-icon">
+                <svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="top-menu-item"><a href="" class="link">Portfolio</a></li>
-            <li class="top-menu-item"><a href="" class="link">Contacts</a></li>
+            <li class="social-icon">
+              <a href="" class="link-icon">
+                <svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twiter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a href="" class="link-icon">
+                <svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a href="" class="link-icon">
+                <svg class="icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </nav>
-        <address class="contacts-us">
-          <ul class="contacts-us-menu">
-            <li class="top-menu-item">
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="top-menu-item">
-              <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address>
+        </div>
+        <!--Open Menu -->
+        <button class="open-menu-button" type="button" data-open-menu>
+          <svg class="open-menu-button-icon" width="24" height="24">
+            <use
+              class="menu-button-icon"
+              href="./images/icons.svg#icon-heroicons-solid_menu"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <!-- Main container-->
     <main>
-      <!-- first-section -->
-      <section class="orders">
-        <div class="container">
-          <h1 class="orders-header">Effective Solutions for Your Business</h1>
+      <!--Hero section-->
+      <section class="hero-section section">
+        <div class="hero-section-container">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="orders-button">Order Service</button>
         </div>
       </section>
-      <!-- second-section -->
-      <section class="concept">
-        <div class="container">
-          <h2 class="concept-header visually-hidden">Our concept</h2>
+      <!-- first section -->
+      <section class="first-section section">
+        <div class="first-container container">
+          <h2 class="visually-hidden">Our concept</h2>
           <ul class="concept-list">
             <li class="concept-item">
               <div class="concept-icon-container">
@@ -122,20 +185,25 @@
           </ul>
         </div>
       </section>
-      <!-- third-section -->
-      <section class="team">
+      <!-- team-section -->
+      <section class="team-section section">
         <div class="container">
-          <h2 class="team-header">Our Team</h2>
-          <ul class="team-list">
-            <li class="team-item">
+          <h2 class="team-title">Our Team</h2>
+          <ul class="team-card-list">
+            <li class="team-card">
               <img
-                src="./images/Photo-Mark-GUERRERO.jpg"
                 class="team-photo"
+                src="./images/Photo-Mark-GUERRERO@1x.jpg"
+                srcset="
+                  ./images/Photo-Mark-GUERRERO@1x.jpg 1x,
+                  ./images/Photo-Mark-GUERRERO@2x.jpg 2x
+                "
                 width="264"
+                height="260"
                 alt="Mark Guerrero"
               />
-              <div class="team-item-desc">
-                <h3 class="team-item-header">Mark Guerrero</h3>
+              <div class="card-container">
+                <h3 class="team-item-title">Mark Guerrero</h3>
                 <p class="team-desc">Product Designer</p>
                 <ul class="social-links">
                   <li class="social-links-item">
@@ -171,13 +239,18 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/Photo-Tom-FORD-frontent-developer.jpg"
                 class="team-photo"
-                width="264"
+                src="./images/Photo-Tom-FORD-frontent-developer@1x.jpg"
+                srcset="
+                  ./images/Photo-Tom-FORD-frontent-developer@1x.jpg 1x,
+                  ./images/Photo-Tom-FORD-frontent-developer@2x.jpg 2x
+                "
                 alt="Tom Ford"
+                width="264"
+                height="260"
               />
-              <div class="team-item-desc">
-                <h3 class="team-item-header">Tom Ford</h3>
+              <div class="card-container">
+                <h3 class="team-item-title">Tom Ford</h3>
                 <p class="team-desc">Frontend Developer</p>
                 <ul class="social-links">
                   <li class="social-links-item">
@@ -213,13 +286,18 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/Photo-Camila-Garcia-marketing.jpg"
                 class="team-photo"
+                src="./images/Photo-Camila-Garcia-marketing@1x.jpg"
+                srcset="
+                  ./images/Photo-Camila-Garcia-marketing@1x.jpg 1x,
+                  ./images/Photo-Camila-Garcia-marketing@2x.jpg 2x
+                "
                 width="264"
+                height="260"
                 alt="Camila Garcia"
               />
-              <div class="team-item-desc">
-                <h3 class="team-item-header">Camila Garcia</h3>
+              <div class="card-container">
+                <h3 class="team-item-title">Camila Garcia</h3>
                 <p class="team-desc">Marketing</p>
                 <ul class="social-links">
                   <li class="social-links-item">
@@ -255,13 +333,18 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/Photo-Daniel-Wilson-UI-Designer.jpg"
                 class="team-photo"
+                src="./images/Photo-Daniel-Wilson-UI-Designer@1x.jpg"
+                srcset="
+                  ./images/Photo-Daniel-Wilson-UI-Designer@1x.jpg 1x,
+                  ./images/Photo-Daniel-Wilson-UI-Designer@2x.jpg 2x
+                "
                 width="264"
+                height="260"
                 alt="Daniel Wilson"
               />
-              <div class="team-item-desc">
-                <h3 class="team-item-header">Daniel Wilson</h3>
+              <div class="card-container">
+                <h3 class="team-item-title">Daniel Wilson</h3>
                 <p class="team-desc">UI Designer</p>
                 <ul class="social-links">
                   <li class="social-links-item">
@@ -314,8 +397,8 @@
           </ul>
         </div>
       </section>
-      <!-- fourth-section -->
-      <section class="portfolio">
+      <!-- Portfolio-section-->
+      <section class="portfolio section">
         <div class="container">
           <h2 class="portfolio-header">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -323,9 +406,14 @@
               <div class="portfolio-item-overlay">
                 <img
                   class="portfolio-item-img"
-                  src="./images/banking-app.jpg"
+                  src="./images/banking-app@1x.jpg"
+                  srcset="
+                    ./images/banking-app@1x.jpg 1x,
+                    ./images/banking-app@2x.jpg 2x
+                  "
                   alt="App"
                   width="360"
+                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -342,9 +430,14 @@
               <div class="portfolio-item-overlay">
                 <img
                   class="portfolio-item-img"
-                  src="./images/Cashless-Payment.jpg"
+                  src="./images/Cashless-Payment@1x.jpg"
+                  srcset="
+                    ./images/Cashless-Payment@1x.jpg 1x,
+                    ./images/Cashless-Payment@2x.jpg 2x
+                  "
                   alt="marketing"
                   width="360"
+                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -361,9 +454,14 @@
               <div class="portfolio-item-overlay">
                 <img
                   class="portfolio-item-img"
-                  src="./images/Meditation-App.jpg"
+                  src="./images/Meditation-App@1x.jpg"
+                  srcset="
+                    ./images/Meditation-App@1x.jpg 1x,
+                    ./images/Meditation-App@2x.jpg 2x
+                  "
                   alt="App"
                   width="360"
+                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -380,9 +478,14 @@
               <div class="portfolio-item-overlay">
                 <img
                   class="portfolio-item-img"
-                  src="./images/Taxi-Service.jpg"
+                  src="./images/Taxi-Service@1x.jpg"
+                  srcset="
+                    ./images/Taxi-Service@1x.jpg 1x,
+                    ./images/Taxi-Service@2x.jpg 2x
+                  "
                   alt="Marketing"
                   width="360"
+                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -399,9 +502,14 @@
               <div class="portfolio-item-overlay">
                 <img
                   class="portfolio-item-img"
-                  src="./images/Screen-Illustrations.jpg"
+                  src="./images/Screen-Illustrations@1x.jpg"
+                  srcset="
+                    ./images/Screen-Illustrations@1x.jpg 1x,
+                    ./images/Screen-Illustrations@2x.jpg 2x
+                  "
                   alt="design"
                   width="360"
+                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -418,9 +526,14 @@
               <div class="portfolio-item-overlay">
                 <img
                   class="portfolio-item-img"
-                  src="./images/Online-Courses.jpg"
+                  src="./images/Online-Courses@1x.jpg"
+                  srcset="
+                    ./images/Online-Courses@1x.jpg 1x,
+                    ./images/Online-Courses@2x.jpg 2x
+                  "
                   alt="marketing"
                   width="360"
+                  height="300"
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -438,10 +551,11 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
         <div class="footer-text-block">
-          <a href="./index.html" class="logo-header"
+          <div class="footer-logo-container flex-element"></div>
+          <a href="./index.html" class="logo-header block-center"
             >Web<span class="logo-footer-part">Studio</span></a
           >
           <p class="footer-desc">
@@ -449,6 +563,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
+        <!--Social links-->
         <div class="soc-link-block">
           <p class="footer-soc-block-header">Social media</p>
           <ul class="social-links">
@@ -498,11 +613,11 @@
             </li>
           </ul>
         </div>
-        <!--homework#5-->
-        <div class="footer-address">
+        <!--Subscribe-->
+        <div class="footer-address flex-element">
           <p class="footer-soc-block-header">Subscribe</p>
-          <form class="footer-form">
-            <label class="formm" for="email">
+          <form class="footer-form" action="#" method="post">
+            <label class="form" for="email">
               <input
                 class="footer-input"
                 type="email"
@@ -521,60 +636,61 @@
           </form>
         </div>
       </div>
+    </div>
     </footer>
 
     <!-- Modal -->
-    <div class="backdrop is-open">
-      <div class="modal">
-        <button type="button" class="modal-close">
+    <div class="modal-backdrop data-backdrop">
+      <div class="modal-window">
+        <button type="button" class="modal-close" data-close-modal>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
-        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <p class="modal-description">Leave your contacts and we will call you back</p>
 
-        <form class="form" name="personal-data" autocomplete="off">
-          <div class="form-element">
+        <form action="#">
+          <div class="modal-form-div">
             <label class="form-label" for="user-name">Name</label>
-            <div class="input-and-icon">
+            <div class="modal-icon-div">
               <input
-                class="form-input"
+                class="name-input"
                 type="text"
                 name="user-name"
                 id="user-name"
               />
-              <svg class="input-icon" width="18" height="24">
+              <svg class="name-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-element">
+          <div class="modal-form-div">
             <label class="form-label" for="user-phone">Phone</label>
-            <div class="input-and-icon">
+            <div class="modal-icon-div">
               <input
-                class="form-input"
+                class="name-input"
                 type="tel"
                 name="user-phone"
                 id="user-phone"
               />
-              <svg class="input-icon" width="18" height="24">
+              <svg class="name-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
 
-          <div class="form-element">
+          <div class="modal-form-div">
             <label class="form-label" for="user-email">Email</label>
-            <div class="input-and-icon">
+            <div class="modal-icon-div">
               <input
-                class="form-input"
+                class="name-input"
                 type="email"
                 name="user-email"
                 id="user-email"
               />
-              <svg class="input-icon" width="18" height="24">
+              <svg class="name-input-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
@@ -583,10 +699,9 @@
           <div class="comment">
             <label class="form-label" for="user-comment">Comment</label>
             <textarea
-              class="input-area"
+              class="comment-section"
               name="user-comment"
               id="user-comment"
-              rows="5"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -597,21 +712,22 @@
               name="user-privacy"
               id="user-privacy"
               value="true"
-              class="modal-check visually-hidden"
+              class="checkbox-input visually-hidden"
             />
             <label for="user-privacy" class="modal-check-text">
               <span class="check-privacy">
-                <svg width="10" height="8">
+                <svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href="" class="privacy-policy">Privacy Policy</a>
+              <a href="#" class="privacy-policy">Privacy Policy</a>
             </label>
           </div>
           <button type="button" class="button-send">Send</button>
         </form>
       </div>
     </div>
+    <script src="./index.js" defer></script>
   </body>
 </html>
