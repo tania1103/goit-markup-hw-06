@@ -1,14 +1,15 @@
 // Selectarea elementelor
 const openMenuButton = document.querySelector('[data-open-menu]');
 const closeMenuButton = document.querySelector('[data-close-menu]');
-const menu = document.querySelector('[data-menu]');
-const button = document.querySelector('.order-button');
+const menuMobContainer= document.querySelector('[data-menu]');
+const button = document.querySelector('.orders-button');
 const backdrop = document.querySelector('[data-backdrop]');
 const modalCloseButton = document.querySelector('[data-close-modal]');
 
+
 // Funcția de toggle pentru meniu
 function toggleMenu() {
-    menu.classList.toggle('is-open');
+    menuMobContainer.classList.toggle('is-open');
 }
 
 // Funcția de toggle pentru modal
