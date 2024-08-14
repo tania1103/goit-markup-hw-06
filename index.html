@@ -34,14 +34,11 @@
     <header class="header">
       <div class="header-container container">
         <!--Div versiune mobile menu functions-->
-        <div class="menu-mob">
-          <div class="menu-mob-container" data-menu>
-            <button class="menu-close-button" type="button" data-close-menu>
-              <svg class="menu-close-button-icon" width="8" height="8">
-                <use
-                  class="icon-close"
-                  href="./images/icons.svg#icon-close"
-                ></use>
+        <div class="menu-mob" data-menu>
+          <div class="menu">
+            <button type="button" class="menu-close-button" data-menu-close>
+              <svg class="icon-close" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
               </svg>
             </button>
             <!-- Navigation mob-->
@@ -74,47 +71,47 @@
               </ul>
             </address>
             <!-- Social Media Link -->
-            <ul class="social-icons">
-              <li class="social-icon">
+            <ul class="social-links">
+              <li class="icon">
                 <a
                   href="https://www.instagram.com/"
-                  class="link-icon"
+                  class="soc-link"
                   target="_blank"
                 >
-                  <svg class="icon" width="24" height="24">
+                  <svg class="social-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-icon">
+              <li class="icon">
                 <a
                   href="https://www.twitter.com/"
-                  class="link-icon"
+                  class="soc-link"
                   target="_blank"
                 >
-                  <svg class="icon" width="24" height="24">
+                  <svg class="social-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-icon">
+              <li class="icon">
                 <a
                   href="https://www.facebook.com/"
-                  class="link-icon"
+                  class="soc-link"
                   target="_blank"
                 >
-                  <svg class="icon" width="24" height="24">
+                  <svg class="social-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-icon">
+              <li class="icon">
                 <a
                   href="https://www.linkedin.com/"
-                  class="link-icon"
+                  class="soc-link"
                   target="_blank"
                 >
-                  <svg class="icon" width="24" height="24">
+                  <svg class="social-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -155,7 +152,7 @@
           </ul>
         </address>
         <!--Open Menu -->
-        <button class="open-menu-button" type="button" data-open-menu>
+        <button type="button" class="open-menu-button" data-menu-open>
           <svg class="open-menu-button-icon" width="24" height="24">
             <use
               class="menu-button-icon"
@@ -169,7 +166,7 @@
     <main>
       <!--Hero section-->
       <section class="hero-section section">
-        <div class="hero-section-container">
+        <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="orders-button" data-modal-open>
             Order Service
@@ -647,7 +644,7 @@
     <!-- Modal -->
     <div class="modal" data-backdrop>
       <div class="modal-window">
-        <button type="button" class="modal-close" data-close-modal>
+        <button type="button" class="menu-close-button" data-close-modal>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -738,6 +735,6 @@
         </form>
       </div>
     </div>
-    <script src="./index.js" defer></script>
+    <script src="./index.js"></script>
   </body>
 </html>

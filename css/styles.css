@@ -116,7 +116,7 @@ button {
   flex-direction: column;
   gap: 40px;
 }
-.menu-mob-container {
+.menu {
   width: 320px;
   padding: 72px 16px 40px;
   margin: 0 auto;
@@ -150,7 +150,7 @@ button {
   font-style: normal;
 }
 
-.menu-mob-container .social-icons {
+.menu .social-links {
   justify-content: left;
   align-self: normal;
   margin-top: 0;
@@ -493,7 +493,7 @@ body .footer-desc {
   pointer-events: none;
 }
 .modal.is-open,
-.menu-mob-top.is-open {
+.menu-mob.is-open {
   opacity: 1;
   pointer-events: auto;
 }
@@ -553,7 +553,7 @@ body .footer-desc {
   fill: #fff;
   margin-left: 16px;
 }
-.modal-close {
+.menu-close-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -620,14 +620,14 @@ body .footer-desc {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-input:checked + .modal-check-text .check-privacy,
-.modal-close:hover,
-.modal-close:focus {
+.menu-close-button:hover,
+.menu-close-button:focus {
   border: none;
   background-color: #404bbf;
   fill: #f4f4fd;
 }
-.modal-close:hover,
-.modal-close:focus {
+.menu-close-button:hover,
+.menu-close-button:focus {
   fill: #fff;
 }
 
